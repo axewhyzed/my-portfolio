@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@700&display=swap');
+
+.App {
+  text-align: center;
+  color: aliceblue;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.navbar-items li {
+  list-style: none;
+  padding: 0 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links {
+  display: inline-block;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.2s;
+}
+
+.nav-links:hover::before {
+  width: 60%;
+}
+
+.navbar-items li:not(:first-child) {
+  margin-left: 48px;
+}
+
+.navbar-items li:last-child {
+  margin-right: 24px;
+}
