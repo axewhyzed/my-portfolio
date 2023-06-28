@@ -11,11 +11,11 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
+import bookstore from "../public/bookstore.png";
+import adventuretimes from "../public/adventure-times.png";
+import sumrize from "../public/sumrize.png";
+import noteit from "../public/note-it.png";
+import quackchat from "../public/quack-chat.png";
 import web6 from "../public/web6.png";
 
 export default function Home() {
@@ -169,16 +169,84 @@ export default function Home() {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
-                  src={web1}
+                  src={adventuretimes}
                 />
 
                 <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
                   <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
-                    Demo
+                    <a href="https://youtu.be/fWHmH_Syn1A" target="_blank">
+                      Demo
+                    </a>
+                  </button>
+                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
+                    <a
+                      href="https://github.com/axewhyzed/Adventure-Times"
+                      target="_blank"
+                    >
+                      Github Link
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"120%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={bookstore}
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
+                    <a
+                      href="https://axewhyzed.github.io/bookstore-react/"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
                   </button>
 
                   <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
-                    View Source
+                    <a
+                      href="https://github.com/axewhyzed/bookstore-react"
+                      target="_blank"
+                    >
+                      Github Link
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"150%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={sumrize}
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
+                    <a
+                      href="https://axewhyzed.github.io/sumrize-ai/"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
+                  </button>
+
+                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
+                    <a
+                      href="https://github.com/axewhyzed/sumrize-ai"
+                      target="_blank"
+                    >
+                      Github Link
+                    </a>
                   </button>
                 </div>
               </div>
@@ -190,16 +258,26 @@ export default function Home() {
                   width={"100%"}
                   height={"100%"}
                   layout="responsive"
-                  src={web2}
+                  src={noteit}
                 />
 
                 <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
                   <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
-                    Demo
+                    <a
+                      href="https://axewhyzed.github.io/note-it-reactjs/"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
                   </button>
 
                   <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
-                    View Source
+                    <a
+                      href="https://github.com/axewhyzed/note-it-reactjs"
+                      target="_blank"
+                    >
+                      Github Link
+                    </a>
                   </button>
                 </div>
               </div>
@@ -209,60 +287,19 @@ export default function Home() {
                 <Image
                   className="rounded-lg object-cover"
                   width={"100%"}
-                  height={"100%"}
+                  height={"90%"}
                   layout="responsive"
-                  src={web3}
+                  src={quackchat}
                 />
 
                 <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
-                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
-                    Demo
-                  </button>
-
                   <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
-                    View Source
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <div className="relative">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={web4}
-                />
-
-                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
-                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
-                    Demo
-                  </button>
-
-                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
-                    View Source
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="basis-1/3 flex-1">
-              <div className="relative">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={web5}
-                />
-
-                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
-                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
-                    Demo
-                  </button>
-
-                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
-                    View Source
+                    <a
+                      href="https://github.com/axewhyzed/quack-chat-react"
+                      target="_blank"
+                    >
+                      Github Link
+                    </a>
                   </button>
                 </div>
               </div>
