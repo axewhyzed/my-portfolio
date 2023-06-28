@@ -31,7 +31,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="logo-class">Mihir</h1>
+            <h1 className="font-pacifico logo-class">Mihir</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -41,7 +41,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 font-bold"
                   href="#"
                 >
                   Resume
@@ -61,11 +61,24 @@ export default function Home() {
               A curious mind on a journey to bring ideas into reality
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillGithub />
-              <AiFillLinkedin />
+              <div>
+                <a href="https://github.com/axewhyzed" target="_blank">
+                  <AiFillGithub />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/mihir-bambhaniya/"
+                  target="_blank"
+                >
+                  <AiFillLinkedin />
+                </a>
+              </div>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={coding} layout="fill" objectFit="cover" />
+            <div className="flex justify-center items-center">
+              <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-100 md:w-100">
+                <Image src={coding} layout="fill" objectFit="cover" />
+              </div>
             </div>
           </div>
         </section>
@@ -150,13 +163,25 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-              />
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web1}
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
+                    Demo
+                  </button>
+
+                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
+                    View Source
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -210,65 +235,79 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white text-center font-bold text-teal-500">
+            <h3 className="text-3xl py-1 dark:text-teal-500 text-center font-bold text-teal-500">
               Contact Me
             </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 text-center">
               Feel free to get in touch with me!
             </p>
-            <form className="max-w-md mx-auto mt-6">
+            <form
+              className="max-w-md mx-auto mt-6"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="0d2b7004-2751-4c55-9d2a-0082471c851b"
+              />
               <div className="mb-4">
-                <label
-                  htmlFor="name"
-                  className="block mb-1 text-gray-800 dark:text-gray-200"
-                >
+                <label htmlFor="name" className="block mb-1 text-teal-500">
                   Name
                 </label>
                 <input
                   type="text"
+                  name="name"
                   id="name"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-800 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  required
                 />
               </div>
+
               <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block mb-1 text-gray-800 dark:text-gray-200"
-                >
+                <label htmlFor="email" className="block mb-1 text-teal-500">
                   Email
                 </label>
                 <input
                   type="email"
+                  name="email"
                   id="email"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-800 focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  required
                 />
               </div>
               <div className="mb-4">
-                <label
-                  htmlFor="message"
-                  className="block mb-1 text-gray-800 dark:text-gray-200"
-                >
+                <label htmlFor="message" className="block mb-1 text-teal-500">
                   Message
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="4"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-800 dark:text-gray-200 resize-none focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-800 resize-none focus:outline-none focus:ring-teal-500 focus:border-teal-500"
+                  required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md transition-colors duration-300 ease-in-out"
+                className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md transition-colors duration-300 ease-in-out font-bold"
               >
                 Submit
               </button>
             </form>
+            <script
+              src="https://web3forms.com/client/script.js"
+              async
+              defer
+            ></script>
           </div>
         </section>
         <footer className="py-4">
           <div className="mx-auto max-w-screen-xl px-4">
             <p className="text-center text-lg">
-              <span className="text-gradient-teal font-semibold"> &copy; 2023{" "} Mihir Bambhaniya</span>
+              <span className="text-gradient-teal font-semibold">
+                2023 - Mihir Bambhaniya
+              </span>
             </p>
           </div>
         </footer>
