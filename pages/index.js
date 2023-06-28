@@ -184,49 +184,109 @@ export default function Home() {
               </div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web2}
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
+                    Demo
+                  </button>
+
+                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
+                    View Source
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web3}
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
+                    Demo
+                  </button>
+
+                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
+                    View Source
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web4}
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
+                    Demo
+                  </button>
+
+                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
+                    View Source
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web5}
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
+                    Demo
+                  </button>
+
+                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
+                    View Source
+                  </button>
+                </div>
+              </div>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
+              <div className="relative">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web6}
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                  <button className="mr-2 px-4 py-2 bg-teal-600 text-white rounded-lg border-none hover:bg-teal-600 focus:outline-none transition-all duration-300 ease-in-out">
+                    Demo
+                  </button>
+
+                  <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg border-none hover:bg-gray-800 focus:outline-none transition-all duration-300 ease-in-out">
+                    View Source
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
